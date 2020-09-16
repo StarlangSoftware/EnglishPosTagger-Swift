@@ -9,7 +9,7 @@ import Foundation
 import DataStructure
 import Corpus
 
-class NaivePosTagger : PosTagger{
+public class NaivePosTagger : PosTagger{
     
     private var __maxMap: [String:String] = [:]
 

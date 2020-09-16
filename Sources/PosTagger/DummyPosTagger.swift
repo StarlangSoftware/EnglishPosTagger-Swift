@@ -8,7 +8,7 @@
 import Foundation
 import Corpus
 
-class DummyPosTagger : PosTagger{
+public class DummyPosTagger : PosTagger{
     
     private var __tagList: [String] = []
 
