@@ -2,7 +2,7 @@ This is a tool meant for tagging words with their part-of-speech, a grammatical 
 
 For Developers
 ============
-You can also see [Java](https://github.com/starlangsoftware/EnglishPosTagger), [Python](https://github.com/starlangsoftware/EnglishPosTagger-Py), [Cython](https://github.com/starlangsoftware/EnglishPosTagger-Cy), [C#](https://github.com/starlangsoftware/EnglishPosTagger-CS), or [C++](https://github.com/starlangsoftware/EnglishPosTagger-CPP) repository.
+You can also see [Java](https://github.com/starlangsoftware/EnglishPosTagger), [Python](https://github.com/starlangsoftware/EnglishPosTagger-Py), [Cython](https://github.com/starlangsoftware/EnglishPosTagger-Cy), [C#](https://github.com/starlangsoftware/EnglishPosTagger-CS), [Js](https://github.com/starlangsoftware/EnglishPosTagger-Js), or [C++](https://github.com/starlangsoftware/EnglishPosTagger-CPP) repository.
 
 ## Requirements
 
