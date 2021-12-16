@@ -34,11 +34,9 @@ public class PosTaggedCorpus: Corpus {
         self.fileName = fileName
         var newSentence : Sentence = Sentence()
         var shortTag : String
-        let thisSourceFile = URL(fileURLWithPath: #file)
-        let thisDirectory = thisSourceFile.deletingLastPathComponent()
-        let url = thisDirectory.appendingPathComponent(fileName)
+        let url = Bundle.module.url(forResource: fileName, withExtension: "txt")
         do{
-            let fileContent = try String(contentsOf: url, encoding: .utf8)
+            let fileContent = try String(contentsOf: url!, encoding: .utf8)
             let lines = fileContent.split(whereSeparator: \.isNewline)
             for line in lines{
                 let wordList = line.components(separatedBy: CharacterSet(charactersIn: "\t\n "))

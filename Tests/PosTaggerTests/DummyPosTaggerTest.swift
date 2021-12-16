@@ -5,7 +5,7 @@ final class DummyPosTaggerTest: XCTestCase {
     
     func testPosTag() {
         let posTagger = DummyPosTagger()
-        let posTaggedCorpus = PosTaggedCorpus(fileName: "brown.txt")
+        let posTaggedCorpus = PosTaggedCorpus(fileName: "brown")
         posTagger.train(corpus: posTaggedCorpus)
         var correct : Int = 0
         var incorrect : Int = 0

@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -12,7 +12,7 @@ let package = Package(
             targets: ["PosTagger"]),
     ],
     dependencies: [
-        .package(name: "Corpus", url: "https://github.com/StarlangSoftware/Corpus-Swift.git", .exact("1.0.2")),
+        .package(name: "Corpus", url: "https://github.com/StarlangSoftware/Corpus-Swift.git", .exact("1.0.13")),
         .package(name: "Hmm", url: "https://github.com/StarlangSoftware/Hmm-Swift.git", .exact("1.0.0")),
     ],
     targets: [
@@ -20,7 +20,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "PosTagger",
-            dependencies: ["Corpus", "Hmm"]),
+            dependencies: ["Corpus", "Hmm"],
+            resources: [.process("brown.txt")]),
         .testTarget(
             name: "PosTaggerTests",
             dependencies: ["PosTagger"]),
