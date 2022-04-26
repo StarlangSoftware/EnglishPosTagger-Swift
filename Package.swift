@@ -12,7 +12,7 @@ let package = Package(
             targets: ["PosTagger"]),
     ],
     dependencies: [
-        .package(name: "Corpus", url: "https://github.com/StarlangSoftware/Corpus-Swift.git", .exact("1.0.13")),
+        .package(name: "Corpus", url: "https://github.com/StarlangSoftware/Corpus-Swift.git", .exact("1.0.16")),
         .package(name: "Hmm", url: "https://github.com/StarlangSoftware/Hmm-Swift.git", .exact("1.0.0")),
     ],
     targets: [
